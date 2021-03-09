@@ -25,15 +25,15 @@ There were several ways to do this search, like line-by-line reading, multi-thre
 
 - [Background Image](#noam-portfolio)
 - [Overview](#overview)
-- [Morse code](#what-language)
-- [Phone Book](#features)
-- [Search in log](#general-features-list)
+- [Morse code](./MorseCode)
+- [Phone Book](./PhoneBook)
+- [Search in log](./SearchLogsInBigFile)
 
 ## Contact:
 
 **Created by Noam Keren-Zvi, Feel free to contact me!**
 
-- prsonal Web: [www.noam-portfolio.com]((https://www.noam-portfolio.com).
+- prsonal Web: [www.noam-portfolio.com](https://www.noam-portfolio.com).
 - Email - [kerenzvin@gmail.com](mailto:kerenzvin@gmail.com).
 - Phone - 054-92-555-22.
 - [@Linkedin](https://www.linkedin.com/in/noam-keren-zvi-61784813b/).
