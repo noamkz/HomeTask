@@ -1,6 +1,6 @@
 ## Home Task - Hibernating Rhinos
 
-![Background-Image](./src/cover-photo.jpg)
+![Background-Image](./src/cover-photo.png)
 
 ## Overview
 
@@ -33,6 +33,7 @@ There were several ways to do this search, like line-by-line reading, multi-thre
 
 **Created by Noam Keren-Zvi, Feel free to contact me!**
 
+- prsonal Web: [www.noam-portfolio.com]((https://www.noam-portfolio.com).
 - Email - [kerenzvin@gmail.com](mailto:kerenzvin@gmail.com).
 - Phone - 054-92-555-22.
 - [@Linkedin](https://www.linkedin.com/in/noam-keren-zvi-61784813b/).
