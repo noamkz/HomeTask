@@ -1,0 +1,13 @@
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\bin\Debug\netcoreapp3.1\HomeTask.exe
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\bin\Debug\netcoreapp3.1\HomeTask.deps.json
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\bin\Debug\netcoreapp3.1\HomeTask.runtimeconfig.json
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\bin\Debug\netcoreapp3.1\HomeTask.runtimeconfig.dev.json
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\bin\Debug\netcoreapp3.1\HomeTask.dll
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\bin\Debug\netcoreapp3.1\HomeTask.pdb
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\obj\Debug\netcoreapp3.1\HomeTask.csprojAssemblyReference.cache
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\obj\Debug\netcoreapp3.1\HomeTask.AssemblyInfoInputs.cache
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\obj\Debug\netcoreapp3.1\HomeTask.AssemblyInfo.cs
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\obj\Debug\netcoreapp3.1\HomeTask.csproj.CoreCompileInputs.cache
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\obj\Debug\netcoreapp3.1\HomeTask.dll
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\obj\Debug\netcoreapp3.1\HomeTask.pdb
+C:\Users\Noam Keren Zvi\source\repos\SearchInLog\HomeTask\obj\Debug\netcoreapp3.1\HomeTask.genruntimeconfig.cache

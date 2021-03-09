@@ -1,0 +1,68 @@
+﻿@page "/morse"
+@* for string query*@
+@using Microsoft.AspNetCore.WebUtilities
+@inject NavigationManager NavigationManager
+@* for muck data injection *@
+@using BlazorHomeTask.Data
+@using BlazorHomeTask.Data.Models
+@inject IMorseCodeData MorseData
+@inject IMorsePlayer MorsePlayer
+
+<h1>Translate and play Morse Code Page</h1>
+
+
+@if (Msg == null || translateMsg == null)
+{
+    <h2><em>input not supply, need to add ?msg=input</em></h2>
+}
+else
+{
+    <h2>Last input message:</h2>
+    <h3>Eng message:   @(translateMsg.MessageSrc)</h3>
+    <h3>Morse message: @(translateMsg.MessageDest)</h3>
+    <h3>peep volume:   @MorsePlayer.GetSoundSetting().Tone</h3>
+}
+
+@code {
+    private string Msg = null;
+    Message translateMsg;
+
+    protected override void OnInitialized()
+    {
+        GetQueryInput();
+
+        base.OnInitialized();
+    }
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (Msg != null)
+            {
+                translateMsg = MorseData.TranslationMessageToCode(Msg);
+
+                StateHasChanged();
+
+                await Task.Run(() =>
+                {
+                    MorsePlayer.PlayMorseMessage(translateMsg);
+                });
+
+                StateHasChanged();
+            }
+        }
+    }
+
+    private void GetQueryInput()
+    {
+        // Get the msg from string query
+        var query = new Uri(NavigationManager.Uri).Query;
+
+        if (QueryHelpers.ParseQuery(query).TryGetValue("msg", out var value))
+        {
+            Msg = value;
+        }
+    }
+}

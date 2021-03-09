@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "G9H/H3Bhq6Flfi+8ndo3z/lxOIvQwMKV42Z9nud6M3kDNYhg+z7kODxwcKi3mniAn8Vyik4Dx6xUCE6bsOTsEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Noam Keren Zvi\\Desktop\\HomeTask\\PhoneBook\\HomeTest\\PhoneBook.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Noam Keren Zvi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

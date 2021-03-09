@@ -1,0 +1,55 @@
+﻿@page "/setup"
+@* for string query*@
+@using Microsoft.AspNetCore.WebUtilities
+@inject NavigationManager NavigationManager
+@* for muck data injection *@
+@using BlazorHomeTask.Data
+@using BlazorHomeTask.Data.Models
+@inject IMorseCodeData MorseData
+@inject IMorsePlayer MorsePlayer
+<h1>Sound Setup Page</h1>
+
+@if (PeepVal == 0)
+{
+    <h1><em>need to add a sound parameter ?sound=[1 - 10]</em></h1>
+}
+else
+{
+    <h2>Peep value: @PeepVal</h2>
+}
+
+@code {
+
+    private short PeepVal { get; set; }
+    private bool Status { get; set; }
+
+    protected override void OnInitialized()
+    {
+        GetQueryInput();
+
+        base.OnInitialized();
+    }
+
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender == true && PeepVal != 0)
+        {
+            MorsePlayer.ModifySound(PeepVal);
+        }
+    }
+
+
+    private void GetQueryInput()
+    {
+        // Get the sound from string query
+        var query = new Uri(NavigationManager.Uri).Query;
+
+        if (QueryHelpers.ParseQuery(query).TryGetValue("sound", out var value))
+        {
+            PeepVal = Convert.ToInt16(value);
+        }
+    }
+
+}
+

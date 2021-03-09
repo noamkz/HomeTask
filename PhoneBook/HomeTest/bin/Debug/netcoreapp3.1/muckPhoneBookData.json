@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Dominique",
+    "phone": "+1 (862) 428-3689",
+    "type": "work"
+  },
+  {
+    "name": "Albert",
+    "phone": "+1 (827) 448-3872",
+    "type": "home"
+  },
+  {
+    "name": "Murray",
+    "phone": "+1 (934) 538-3007",
+    "type": "work"
+  },
+  {
+    "name": "Kinney",
+    "phone": "+1 (996) 518-3864",
+    "type": "work"
+  },
+  {
+    "name": "Figueroa",
+    "phone": "+1 (915) 445-2193",
+    "type": "work"
+  }
+]

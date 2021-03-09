@@ -1,0 +1,67 @@
+﻿@page "/log"
+@* for string query*@
+@using Microsoft.AspNetCore.WebUtilities
+@inject NavigationManager NavigationManager
+@* for muck data injection *@
+@using BlazorHomeTask.Data
+@using BlazorHomeTask.Data.Models
+@inject IMorseCodeData MorseData
+@inject IMorsePlayer MorsePlayer
+
+<h1>Get Morse Code from log</h1>
+
+
+@if (indexNumber == 0)
+{
+    <h2><em>input not supply, need to add ?n=input</em></h2>
+}
+else
+{
+    if (message != null)
+    {
+        <h3>Record in index  @indexNumber</h3>
+        <h3>Eng message:     @message.MessageSrc</h3>
+        <h3>Morse message:   @message.MessageDest</h3>
+    }
+    else
+    {
+        <h3>Record in index Not found!</h3>
+    }
+}
+
+@code {
+
+    private int indexNumber = 0;
+    private Message message = null;
+
+    protected override void OnInitialized()
+    {
+        GetQueryInput();
+
+        base.OnInitialized();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && indexNumber != 0)
+        {
+            await Task.Run(() =>
+            {
+                message = MorsePlayer.GetMessagesFromLog(indexNumber);
+            });
+
+            StateHasChanged();
+        }
+    }
+
+    private void GetQueryInput()
+    {
+        // Get the msg from string query
+        var query = new Uri(NavigationManager.Uri).Query;
+
+        if (QueryHelpers.ParseQuery(query).TryGetValue("n", out var value))
+        {
+            indexNumber = Convert.ToInt32(value);
+        }
+    }
+}

@@ -1,0 +1,6 @@
+C:\Users\Noam Keren Zvi\Desktop\HomeTask\‏‏תיקיה חדשה\PhoneBook.exe
+C:\Users\Noam Keren Zvi\Desktop\HomeTask\‏‏תיקיה חדשה\PhoneBook.dll
+C:\Users\Noam Keren Zvi\Desktop\HomeTask\‏‏תיקיה חדשה\PhoneBook.deps.json
+C:\Users\Noam Keren Zvi\Desktop\HomeTask\‏‏תיקיה חדשה\PhoneBook.runtimeconfig.json
+C:\Users\Noam Keren Zvi\Desktop\HomeTask\‏‏תיקיה חדשה\PhoneBook.pdb
+C:\Users\Noam Keren Zvi\Desktop\HomeTask\‏‏תיקיה חדשה\Newtonsoft.Json.dll

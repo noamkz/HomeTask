@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RUI9ppdquiB7HJFXTrfkdMlCjuY5f7R4qnSX6u0aqoJ4o+9QrRqfDYDUy1olXvyFFTB3hUnS2sQr4KswcNWoxA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Noam Keren Zvi\\Desktop\\HomeTask\\MorseCode\\BlazorHomeTask\\BlazorHomeTask.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Noam Keren Zvi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,48 @@
+﻿@page "/"
+
+<h1><b>Hello, Hibernating Rhinos</b></h1>
+
+<h2><b>Welcome to Morse Code App.</b></h2>
+
+<h3>
+    <br />
+    <b>A brief explanation:</b>
+    <br />
+    There are links to the gates on the right side of the screen, do not forget that the query string makes the inputs.
+</h3>
+<h3>
+    I hope the design would not interfere. If it denoted the task or I had more time, it would do it become better.
+</h3>
+<h3>
+    <br />
+    <b>Regarding the questions on the task page:</b>
+</h3>
+<h4>
+    •	Assuming that the log can grow to be very large, how would you handle this situation now?
+</h4>
+<h5>In such a situation, I think it is advisable to keep the list in some database probably which is NoSQL</h5>
+<h4>
+    •	How do you handle request timing out if they are waiting to play a sound for too long?
+</h4>
+<h5>
+    I deal with this in the form of an endless waiting queue, but as more options, locks synchronize, <br />
+    create a timeout that will respond after X seconds, erase the current sound, or throw an error, etc...
+</h5>
+<h3>
+    <br />
+    <br />
+    <b>I chose Blazor as my language for several reasons:</b>
+    <br />
+    1. I wanted to write a server-side and a client-side  on one platform (easy to present)
+    <br />
+    2. I wanted that the code to be in language relevant to the job (dot net core)
+    <br />
+    3. I wanted a language that was easy to model by  the principles of OOP (see the class diagram)
+    <br />
+    4. Learn about new technology on the way (the first time I use it)
+</h3>
+<br />
+<img alt="https://drive.google.com/file/d/15xy4St591WGxyn1eZjHkyHTJvp5ikmKu/view?usp=sharing" asp-append-version="true" width="80%" src="./Untitled-Diagram.png" />
+
+
+
